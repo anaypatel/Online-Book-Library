@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="css/home.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:900" rel="stylesheet">
+<title>Home</title>
+</head>
+
+<body>
+	<div id="top"></div>
+	<div id="search-container">
+		<h1>LibraMate</h1>
+		<form name="myform" method="GET" action="Results.jsp" >
+			<input type="text" name="search" placeholder="Search..." /> 
+			<div id="search-icon-container">
+			<img id="search-icon" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-search-strong-128.png" />
+			</div>
+			<br />
+			
+				<input class="intitle" id="intitle" type="radio" name="radio" value="intitle" class="radio" checked="checked">
+						<label class="intitle" for="intitle">Title</label>
+						<input class="isbn" id="isbn" type="radio" name="radio" value="isbn" class="radio">
+						<label class="isbn" for="isbn">ISBN</label>
+						
+						<br />
+						
+						<input class="inauthor" id="inauthor" type="radio" name="radio" value="inauthor" class="radio">
+						<label class="inauthor" for="author">Author</label>
+						<input class="subject" id="subject" type="radio" name="radio" value="subject" class="radio">
+						<label class="subject" for="subject">Genre</label>
+		
+				<input type="hidden" name="searchtype" value="books">	
+				
+				<input type="submit" style="display:none" />
+		
+		</form> 
+		
+		<div id="signup">
+		<style>
+		#signup{
+			position: relative;
+			top: 25px;
+		}
+		input[type=submit] {
+    				width: 5em;
+    				height: 2em;
+    				background-color: black;
+    				color: white;
+    				font-size: 1.5em;
+				font-family: 'Roboto', sans-serif;
+			}	
+		</style>
+		
+		<form action="Signup.jsp" method="POST"><input type="submit" name="signup" value="Sign Up"></form>
+		
+		</div>
+		
+		<br>
+		<br>
+		
+		<div id="login">
+		<style>
+		#login{
+			position: relative;
+			top: 15px;
+		}
+		input[type=submit] {
+    				width: 5em;
+    				height: 2em;
+    				background-color: black;
+    				color: white;
+    				font-size: 1.5em;
+				font-family: 'Roboto', sans-serif;
+			}	
+		</style>
+	
+		<form action="Login.jsp" method="POST"><input type="submit" name="login" value="Login"></form>
+		
+		</div>
+		
+	</div>
+	<div id = "bottom"></div>
+	
+</body>
+</html>
